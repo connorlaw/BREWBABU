@@ -1,0 +1,6 @@
+framework module Pods_BREWBABU_XCODE {
+  umbrella header "Pods-BREWBABU XCODE-umbrella.h"
+
+  export *
+  module * { export * }
+}

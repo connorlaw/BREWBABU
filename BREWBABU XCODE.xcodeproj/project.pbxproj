@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0FD7DC541F4F162400741B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7DC531F4F162400741B54 /* AppDelegate.swift */; };
-		0FD7DC561F4F162400741B54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7DC551F4F162400741B54 /* ViewController.swift */; };
+		0FD7DC561F4F162400741B54 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7DC551F4F162400741B54 /* SignInViewController.swift */; };
 		0FD7DC591F4F162500741B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7DC571F4F162500741B54 /* Main.storyboard */; };
 		0FD7DC5B1F4F162500741B54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7DC5A1F4F162500741B54 /* Assets.xcassets */; };
 		0FD7DC5E1F4F162500741B54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7DC5C1F4F162500741B54 /* LaunchScreen.storyboard */; };
+		0FD7DC661F4F171F00741B54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7DC651F4F171F00741B54 /* GoogleService-Info.plist */; };
+		F1C7BBCA90593EDA7A9D4347 /* Pods_BREWBABU_XCODE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3ADEEE3FB2030EA41C76DB /* Pods_BREWBABU_XCODE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FD7DC501F4F162400741B54 /* BREWBABU XCODE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BREWBABU XCODE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD7DC531F4F162400741B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0FD7DC551F4F162400741B54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FD7DC551F4F162400741B54 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0FD7DC581F4F162500741B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FD7DC5A1F4F162500741B54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FD7DC5D1F4F162500741B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FD7DC5F1F4F162500741B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FD7DC651F4F171F00741B54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B9ECE514CBB3D9062BE073A /* Pods-BREWBABU XCODE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BREWBABU XCODE.release.xcconfig"; path = "Pods/Target Support Files/Pods-BREWBABU XCODE/Pods-BREWBABU XCODE.release.xcconfig"; sourceTree = "<group>"; };
+		4A3ADEEE3FB2030EA41C76DB /* Pods_BREWBABU_XCODE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BREWBABU_XCODE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C865E217A9813FF2E002E7D7 /* Pods-BREWBABU XCODE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BREWBABU XCODE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BREWBABU XCODE/Pods-BREWBABU XCODE.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C7BBCA90593EDA7A9D4347 /* Pods_BREWBABU_XCODE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F1EE2431F4F24CF008FCBB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0F1EE2441F4F24E0008FCBB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0F1EE2451F4F24E6008FCBB4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FD7DC551F4F162400741B54 /* SignInViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		0FD7DC471F4F162300741B54 = {
 			isa = PBXGroup;
 			children = (
 				0FD7DC521F4F162400741B54 /* BREWBABU XCODE */,
 				0FD7DC511F4F162400741B54 /* Products */,
+				14E6F88B560D52C349D06BC5 /* Pods */,
+				8D52B107E4D77C75431664D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +85,34 @@
 		0FD7DC521F4F162400741B54 /* BREWBABU XCODE */ = {
 			isa = PBXGroup;
 			children = (
+				0F1EE2441F4F24E0008FCBB4 /* Model */,
+				0F1EE2451F4F24E6008FCBB4 /* Controller */,
+				0F1EE2431F4F24CF008FCBB4 /* View */,
 				0FD7DC531F4F162400741B54 /* AppDelegate.swift */,
-				0FD7DC551F4F162400741B54 /* ViewController.swift */,
 				0FD7DC571F4F162500741B54 /* Main.storyboard */,
 				0FD7DC5A1F4F162500741B54 /* Assets.xcassets */,
 				0FD7DC5C1F4F162500741B54 /* LaunchScreen.storyboard */,
 				0FD7DC5F1F4F162500741B54 /* Info.plist */,
+				0FD7DC651F4F171F00741B54 /* GoogleService-Info.plist */,
 			);
 			path = "BREWBABU XCODE";
+			sourceTree = "<group>";
+		};
+		14E6F88B560D52C349D06BC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C865E217A9813FF2E002E7D7 /* Pods-BREWBABU XCODE.debug.xcconfig */,
+				3B9ECE514CBB3D9062BE073A /* Pods-BREWBABU XCODE.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D52B107E4D77C75431664D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A3ADEEE3FB2030EA41C76DB /* Pods_BREWBABU_XCODE.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FD7DC621F4F162500741B54 /* Build configuration list for PBXNativeTarget "BREWBABU XCODE" */;
 			buildPhases = (
+				2183CDED8E8108FF3BD151E4 /* [CP] Check Pods Manifest.lock */,
 				0FD7DC4C1F4F162400741B54 /* Sources */,
 				0FD7DC4D1F4F162400741B54 /* Frameworks */,
 				0FD7DC4E1F4F162400741B54 /* Resources */,
+				B70A9AEA933738FC177FB42E /* [CP] Embed Pods Frameworks */,
+				23FEFED306CF3269A7E70526 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD7DC5E1F4F162500741B54 /* LaunchScreen.storyboard in Resources */,
+				0FD7DC661F4F171F00741B54 /* GoogleService-Info.plist in Resources */,
 				0FD7DC5B1F4F162500741B54 /* Assets.xcassets in Resources */,
 				0FD7DC591F4F162500741B54 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2183CDED8E8108FF3BD151E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BREWBABU XCODE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23FEFED306CF3269A7E70526 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BREWBABU XCODE/Pods-BREWBABU XCODE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B70A9AEA933738FC177FB42E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BREWBABU XCODE/Pods-BREWBABU XCODE-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BREWBABU XCODE/Pods-BREWBABU XCODE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0FD7DC4C1F4F162400741B54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FD7DC561F4F162400741B54 /* ViewController.swift in Sources */,
+				0FD7DC561F4F162400741B54 /* SignInViewController.swift in Sources */,
 				0FD7DC541F4F162400741B54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +376,7 @@
 		};
 		0FD7DC631F4F162500741B54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C865E217A9813FF2E002E7D7 /* Pods-BREWBABU XCODE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DL9N7UQ2W7;
@@ -274,6 +390,7 @@
 		};
 		0FD7DC641F4F162500741B54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B9ECE514CBB3D9062BE073A /* Pods-BREWBABU XCODE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DL9N7UQ2W7;
@@ -304,6 +421,7 @@
 				0FD7DC641F4F162500741B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
