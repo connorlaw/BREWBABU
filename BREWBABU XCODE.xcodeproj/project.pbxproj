@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1D17F11F4F58B00053A80D /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D17F01F4F58B00053A80D /* FancyView.swift */; };
+		0F1D17F31F4F59190053A80D /* RoundedSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D17F21F4F59190053A80D /* RoundedSignInButton.swift */; };
 		0FD7DC541F4F162400741B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7DC531F4F162400741B54 /* AppDelegate.swift */; };
 		0FD7DC561F4F162400741B54 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7DC551F4F162400741B54 /* SignInViewController.swift */; };
 		0FD7DC591F4F162500741B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7DC571F4F162500741B54 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F1D17F01F4F58B00053A80D /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		0F1D17F21F4F59190053A80D /* RoundedSignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedSignInButton.swift; sourceTree = "<group>"; };
 		0FD7DC501F4F162400741B54 /* BREWBABU XCODE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BREWBABU XCODE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD7DC531F4F162400741B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FD7DC551F4F162400741B54 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 		0F1EE2431F4F24CF008FCBB4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0F1D17F01F4F58B00053A80D /* FancyView.swift */,
+				0F1D17F21F4F59190053A80D /* RoundedSignInButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -253,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD7DC561F4F162400741B54 /* SignInViewController.swift in Sources */,
+				0F1D17F31F4F59190053A80D /* RoundedSignInButton.swift in Sources */,
 				0FD7DC541F4F162400741B54 /* AppDelegate.swift in Sources */,
+				0F1D17F11F4F58B00053A80D /* FancyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
