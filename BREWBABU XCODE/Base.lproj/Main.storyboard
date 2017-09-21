@@ -38,6 +38,10 @@
                                 <color key="textColor" white="1" alpha="0.74598371478873238" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="emailFieldTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Swx-JZ-qiG"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LRE-2C-R26"/>
+                                </connections>
                             </textField>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPk-kK-Yod">
                                 <rect key="frame" x="42" y="312" width="291" height="1"/>
@@ -56,6 +60,9 @@
                                 <color key="textColor" white="1" alpha="0.74598371478873238" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Hy1-dL-yKa"/>
+                                </connections>
                             </textField>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPw-4Y-f3i">
                                 <rect key="frame" x="42" y="386" width="291" height="1"/>
@@ -76,6 +83,9 @@
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" white="1" alpha="0.90308648767605637" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcW-p6-iQO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VB8-Ny-1kD" customClass="RoundedSignInButton" customModule="BREWBABU_XCODE" customModuleProvider="target">
                                 <rect key="frame" x="53" y="527" width="269" height="66"/>
@@ -123,10 +133,224 @@
                             <constraint firstAttribute="trailingMargin" secondItem="QPk-kK-Yod" secondAttribute="trailing" constant="26" id="uHQ-ym-nyS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="8Ib-ni-y5F" id="g2T-op-wMw"/>
+                        <outlet property="passwordField" destination="BUC-GE-CnC" id="b6T-DS-8X8"/>
+                        <segue destination="Cdq-SS-IYP" kind="show" identifier="goToTea" id="BbZ-lT-8Y8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+        <!--Tea View Controller-->
+        <scene sceneID="rhO-Iv-dH2">
+            <objects>
+                <viewController id="Cdq-SS-IYP" customClass="TeaViewController" customModule="BREWBABU_XCODE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cKb-ru-7KQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="SM5-dH-Ujm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ToV-Bz-gsi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jsO-Cm-d5X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p6y-UM-Kcw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zES-YD-5hc">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRt-OQ-Kgq">
+                                                        <rect key="frame" x="0.0" y="16" width="375" height="37"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="TEA">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.67450980392156867" green="0.77647058823529413" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="31" name="HelveticaNeue-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="Ubt-OR-yKq"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="HOW DO YOU BREW? " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7op-79-POP">
+                                                <rect key="frame" x="0.0" y="70" width="375" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="39q-uV-Tbi"/>
+                                                    <constraint firstAttribute="height" constant="22" id="TuA-jV-3Jx"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.82352941176470584" green="0.62745098039215685" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-QO-Da1">
+                                                <rect key="frame" x="0.0" y="92" width="375" height="111"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="111" id="NYq-ax-jd6"/>
+                                                    <constraint firstAttribute="height" constant="111" id="Oee-TS-tEF"/>
+                                                </constraints>
+                                                <string key="text">Our mission here at Brewbabu is to make tea exciting and adventurous again. Therefore, all of our teas are loose leaf and blended especially for Brewbabu.
+
+Come on in and rekindle your love with tea by letting it out the bag so it can do it’s magic.</string>
+                                                <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vPN-IE-9Hw">
+                                        <rect key="frame" x="0.0" y="203" width="375" height="464"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="e3R-gM-BZA"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="101" rowHeight="75" id="vBL-fK-SMc" customClass="TeaCategoryCell" customModule="BREWBABU_XCODE" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vBL-fK-SMc" id="IrN-z5-nah">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHw-s8-gGK">
+                                                            <rect key="frame" x="8" y="10" width="359" height="55"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="55" id="ol4-gb-Wu7"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                            <color key="textColor" red="0.84313725490196079" green="0.73333333333333328" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="aHw-s8-gGK" firstAttribute="leading" secondItem="IrN-z5-nah" secondAttribute="leadingMargin" id="3pX-au-PJc"/>
+                                                        <constraint firstItem="aHw-s8-gGK" firstAttribute="trailing" secondItem="IrN-z5-nah" secondAttribute="trailingMargin" id="l8o-T9-kwG"/>
+                                                        <constraint firstItem="aHw-s8-gGK" firstAttribute="centerY" secondItem="IrN-z5-nah" secondAttribute="centerY" id="wTf-sW-dZ8"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <outlet property="teaCategory" destination="aHw-s8-gGK" id="koW-0C-Zgu"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="OjG-GO-mye"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jsO-Cm-d5X" firstAttribute="centerX" secondItem="ToV-Bz-gsi" secondAttribute="centerX" id="dWf-b3-sPz"/>
+                            <constraint firstItem="SM5-dH-Ujm" firstAttribute="top" secondItem="jsO-Cm-d5X" secondAttribute="bottom" id="eWx-Y2-xoe"/>
+                            <constraint firstItem="jsO-Cm-d5X" firstAttribute="leading" secondItem="ToV-Bz-gsi" secondAttribute="leading" id="h54-0T-2u7"/>
+                            <constraint firstItem="jsO-Cm-d5X" firstAttribute="top" secondItem="ToV-Bz-gsi" secondAttribute="top" id="lBN-M7-fdj"/>
+                            <constraint firstAttribute="trailing" secondItem="jsO-Cm-d5X" secondAttribute="trailing" id="pa3-YD-hNh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="howDoYouBrewTextField" destination="7op-79-POP" id="Is9-6T-2dg"/>
+                        <outlet property="tableView" destination="vPN-IE-9Hw" id="wiO-hm-Aam"/>
+                        <outlet property="teaTitle" destination="pRt-OQ-Kgq" id="1O0-xL-0rm"/>
+                        <segue destination="eCe-pr-r0k" kind="showDetail" identifier="ShowBrewBlack" id="Lfy-pI-glB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezC-3z-chn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="36"/>
+        </scene>
+        <!--Brew Black View Controller-->
+        <scene sceneID="sMW-Hf-V7U">
+            <objects>
+                <viewController id="eCe-pr-r0k" customClass="BrewBlackViewController" customModule="BREWBABU_XCODE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DH6-2v-eng"/>
+                        <viewControllerLayoutGuide type="bottom" id="UkE-sr-9My"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r6e-F4-9MN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ccN-3E-C5F">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ui7-oi-vFz">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KaG-bi-suM">
+                                                <rect key="frame" x="0.0" y="16" width="375" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="BREW BLACK">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.67450980392156867" green="0.77647058823529413" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="31" name="HelveticaNeue-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYL-Yz-Ad1">
+                                                <rect key="frame" x="8" y="20" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="waR-Lv-7Sm"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="111" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fph-Pu-fjl">
+                                        <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="AIT-x5-hCF"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="102" rowHeight="120" id="8yc-N7-4Pi">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8yc-N7-4Pi" id="jag-Gf-Lq7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="mWo-el-IDn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ccN-3E-C5F" firstAttribute="leading" secondItem="r6e-F4-9MN" secondAttribute="leading" id="3ww-Lv-3MQ"/>
+                            <constraint firstItem="UkE-sr-9My" firstAttribute="top" secondItem="ccN-3E-C5F" secondAttribute="bottom" id="LqB-9F-1Qu"/>
+                            <constraint firstItem="ccN-3E-C5F" firstAttribute="top" secondItem="r6e-F4-9MN" secondAttribute="top" id="LtR-63-XsT"/>
+                            <constraint firstAttribute="trailing" secondItem="ccN-3E-C5F" secondAttribute="trailing" id="hPh-R5-CMp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWe-ak-aB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688.8" y="35.532233883058474"/>
         </scene>
     </scenes>
     <resources>

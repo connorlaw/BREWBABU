@@ -9,18 +9,23 @@
 /* Begin PBXBuildFile section */
 		0F1D17F11F4F58B00053A80D /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D17F01F4F58B00053A80D /* FancyView.swift */; };
 		0F1D17F31F4F59190053A80D /* RoundedSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D17F21F4F59190053A80D /* RoundedSignInButton.swift */; };
+		0F1D17F71F5753750053A80D /* TeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D17F61F5753750053A80D /* TeaViewController.swift */; };
 		0FD7DC541F4F162400741B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7DC531F4F162400741B54 /* AppDelegate.swift */; };
 		0FD7DC561F4F162400741B54 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7DC551F4F162400741B54 /* SignInViewController.swift */; };
 		0FD7DC591F4F162500741B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7DC571F4F162500741B54 /* Main.storyboard */; };
 		0FD7DC5B1F4F162500741B54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7DC5A1F4F162500741B54 /* Assets.xcassets */; };
 		0FD7DC5E1F4F162500741B54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7DC5C1F4F162500741B54 /* LaunchScreen.storyboard */; };
 		0FD7DC661F4F171F00741B54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7DC651F4F171F00741B54 /* GoogleService-Info.plist */; };
+		0FEEA7C61F73F23C00B8C9D9 /* BrewBlackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEA7C51F73F23C00B8C9D9 /* BrewBlackViewController.swift */; };
+		0FEEA7C81F73F55000B8C9D9 /* TeaCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEA7C71F73F54F00B8C9D9 /* TeaCategoryCell.swift */; };
+		0FEEA7CA1F73FC7B00B8C9D9 /* TeaCategoryArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEA7C91F73FC7B00B8C9D9 /* TeaCategoryArray.swift */; };
 		F1C7BBCA90593EDA7A9D4347 /* Pods_BREWBABU_XCODE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3ADEEE3FB2030EA41C76DB /* Pods_BREWBABU_XCODE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F1D17F01F4F58B00053A80D /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		0F1D17F21F4F59190053A80D /* RoundedSignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedSignInButton.swift; sourceTree = "<group>"; };
+		0F1D17F61F5753750053A80D /* TeaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeaViewController.swift; sourceTree = "<group>"; };
 		0FD7DC501F4F162400741B54 /* BREWBABU XCODE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BREWBABU XCODE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD7DC531F4F162400741B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FD7DC551F4F162400741B54 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +34,9 @@
 		0FD7DC5D1F4F162500741B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FD7DC5F1F4F162500741B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FD7DC651F4F171F00741B54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FEEA7C51F73F23C00B8C9D9 /* BrewBlackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewBlackViewController.swift; sourceTree = "<group>"; };
+		0FEEA7C71F73F54F00B8C9D9 /* TeaCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeaCategoryCell.swift; sourceTree = "<group>"; };
+		0FEEA7C91F73FC7B00B8C9D9 /* TeaCategoryArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeaCategoryArray.swift; sourceTree = "<group>"; };
 		3B9ECE514CBB3D9062BE073A /* Pods-BREWBABU XCODE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BREWBABU XCODE.release.xcconfig"; path = "Pods/Target Support Files/Pods-BREWBABU XCODE/Pods-BREWBABU XCODE.release.xcconfig"; sourceTree = "<group>"; };
 		4A3ADEEE3FB2030EA41C76DB /* Pods_BREWBABU_XCODE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BREWBABU_XCODE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C865E217A9813FF2E002E7D7 /* Pods-BREWBABU XCODE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BREWBABU XCODE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BREWBABU XCODE/Pods-BREWBABU XCODE.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +59,7 @@
 			children = (
 				0F1D17F01F4F58B00053A80D /* FancyView.swift */,
 				0F1D17F21F4F59190053A80D /* RoundedSignInButton.swift */,
+				0FEEA7C71F73F54F00B8C9D9 /* TeaCategoryCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -58,6 +67,7 @@
 		0F1EE2441F4F24E0008FCBB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0FEEA7C91F73FC7B00B8C9D9 /* TeaCategoryArray.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -66,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				0FD7DC551F4F162400741B54 /* SignInViewController.swift */,
+				0F1D17F61F5753750053A80D /* TeaViewController.swift */,
+				0FEEA7C51F73F23C00B8C9D9 /* BrewBlackViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -258,10 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FEEA7CA1F73FC7B00B8C9D9 /* TeaCategoryArray.swift in Sources */,
 				0FD7DC561F4F162400741B54 /* SignInViewController.swift in Sources */,
 				0F1D17F31F4F59190053A80D /* RoundedSignInButton.swift in Sources */,
+				0FEEA7C61F73F23C00B8C9D9 /* BrewBlackViewController.swift in Sources */,
 				0FD7DC541F4F162400741B54 /* AppDelegate.swift in Sources */,
+				0FEEA7C81F73F55000B8C9D9 /* TeaCategoryCell.swift in Sources */,
 				0F1D17F11F4F58B00053A80D /* FancyView.swift in Sources */,
+				0F1D17F71F5753750053A80D /* TeaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
